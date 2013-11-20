@@ -1,0 +1,16 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test1a
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+This is Release 4.00:  Test 1a
+ Time Target Action  Run New Done       State Populations 
+   97   0      SLEEP   0         WAITING: 0
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  206   0   INTERUPT   0         READY  : 0
+Sleep Time = 100, elapsed time= 161
+ Time Target Action  Run New Done       State Populations 
+  245   0       DONE   0      0 
+Hardware Statistics during the Simulation
+Context Switches =     2:  CALLS =    75:  Masks =     0
+The Z502 halts execution and Ends at Time 247
+Exiting the program

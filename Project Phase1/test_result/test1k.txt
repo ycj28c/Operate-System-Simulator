@@ -1,0 +1,9 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test1k
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+Release 4.00:Test 1k: Pid 0
+Fault_handler: Found vector type 4 with value 0
+Hardware Statistics during the Simulation
+Faults =     1:  Context Switches =     1:  CALLS =    20:  Masks =     0
+The Z502 halts execution and Ends at Time 58
+Exiting the program

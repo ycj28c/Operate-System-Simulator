@@ -1,0 +1,130 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test1h
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+Release 4.00:Test 1h: Pid 0
+Change susccessfully, Now The priority of (test1h pid:0) is 1
+ Time Target Action  Run New Done       State Populations 
+   80   0     MODIFY   0         READY  : 0
+ Time Target Action  Run New Done       State Populations 
+  131   1     CREATE   0   1      READY  : 0 1
+ Time Target Action  Run New Done       State Populations 
+  186   2     CREATE   0   2      READY  : 0 1 2
+ Time Target Action  Run New Done       State Populations 
+  243   3     CREATE   0   3      READY  : 0 1 2 3
+ Time Target Action  Run New Done       State Populations 
+  289   0      SLEEP   0         READY  : 1 2 3
+                                 WAITING: 0
+Release 4.00:Test 1x: Pid 1
+ Time Target Action  Run New Done       State Populations 
+  351   1      SLEEP   1         READY  : 2 3
+                                 WAITING: 0 1
+Release 4.00:Test 1x: Pid 2
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  419   2      SLEEP   2         READY  : 3
+                                 WAITING: 0 1 2
+Release 4.00:Test 1x: Pid 3
+ Time Target Action  Run New Done       State Populations 
+  487   3   INTERUPT   3         READY  : 3 1
+                                 WAITING: 0 2
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  540   3      SLEEP   3         READY  : 0 1
+                                 WAITING: 2 3
+ Time Target Action  Run New Done       State Populations 
+  564   3   INTERUPT   0         READY  : 0 1
+                                 WAITING: 2 3
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  606   0   INTERUPT   0         READY  : 0 1 2 3
+Change susccessfully, Now The priority of (test1h_a pid:1) is 10
+ Time Target Action  Run New Done       State Populations 
+  640   1     MODIFY   0         READY  : 0 1 2 3
+Change susccessfully, Now The priority of (test1h_c pid:3) is 30
+ Time Target Action  Run New Done       State Populations 
+  673   3     MODIFY   0         READY  : 0 1 2 3
+ Time Target Action  Run New Done       State Populations 
+  717   0      SLEEP   0         READY  : 1 2 3
+                                 WAITING: 0
+Test1X: Pid = 1, Sleep Time = 71, Latency Time = 423
+ Time Target Action  Run New Done       State Populations 
+  785   1      SLEEP   1         READY  : 2 3
+                                 WAITING: 0 1
+Test1X: Pid = 2, Sleep Time = 124, Latency Time = 429
+ Time Target Action  Run New Done       State Populations 
+  850   2      SLEEP   2         READY  : 3
+                                 WAITING: 0 1 2
+Test1X: Pid = 3, Sleep Time = 61, Latency Time = 422
+ Time Target Action  Run New Done       State Populations 
+  920   3      SLEEP   3         WAITING: 0 1 2 3
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1053   3   INTERUPT   3         READY  : 0 1 2 3
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1087   3   INTERUPT   3         READY  : 0 1 2 3
+Change susccessfully, Now The priority of (test1h_a pid:1) is 30
+ Time Target Action  Run New Done       State Populations 
+ 1123   1     MODIFY   0         READY  : 0 2 3 1
+Change susccessfully, Now The priority of (test1h_b pid:2) is 10
+ Time Target Action  Run New Done       State Populations 
+ 1156   2     MODIFY   0         READY  : 0 2 3 1
+ Time Target Action  Run New Done       State Populations 
+ 1200   0      SLEEP   0         READY  : 2 3 1
+                                 WAITING: 0
+Test1X: Pid = 2, Sleep Time = 73, Latency Time = 404
+ Time Target Action  Run New Done       State Populations 
+ 1268   2      SLEEP   2         READY  : 3 1
+                                 WAITING: 0 2
+Test1X: Pid = 3, Sleep Time = 118, Latency Time = 407
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1345   3      SLEEP   3         READY  : 1
+                                 WAITING: 0 2 3
+Test1X: Pid = 1, Sleep Time = 130, Latency Time = 617
+ Time Target Action  Run New Done       State Populations 
+ 1419   1   INTERUPT   1         READY  : 1 3
+                                 WAITING: 0 2
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1472   1      SLEEP   1         READY  : 2 3
+                                 WAITING: 0 1
+ Time Target Action  Run New Done       State Populations 
+ 1496   1   INTERUPT   2         READY  : 2 3
+                                 WAITING: 0 1
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1543   2   INTERUPT   2         READY  : 2 3 1
+                                 WAITING: 0
+Test1X: Pid = 2, Sleep Time = 120, Latency Time = 331
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1619   2      SLEEP   2         READY  : 3 1
+                                 WAITING: 0 2
+Test1X: Pid = 3, Sleep Time = 18, Latency Time = 340
+ Time Target Action  Run New Done       State Populations 
+ 1693   3   INTERUPT   3         READY  : 2 3 1
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 1722   3      SLEEP   3         READY  : 2 1
+                                 WAITING: 0 3
+Test1X: Pid = 2, Sleep Time = 18, Latency Time = 169
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1796   2      SLEEP   2         READY  : 1
+                                 WAITING: 0 3 2
+Test1X: Pid = 1, Sleep Time = 52, Latency Time = 452
+ Time Target Action  Run New Done       State Populations 
+ 1874   1   INTERUPT   1         READY  : 0 1 3
+                                 WAITING: 2
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1922   1      SLEEP   1         READY  : 0 2 3 1
+ Time Target Action  Run New Done       State Populations 
+ 1951   1   INTERUPT   0         READY  : 0 2 3 1
+ Time Target Action  Run New Done       State Populations 
+ 1978   0       DONE   0      0 READY  : 0 2 3 1
+Hardware Statistics during the Simulation
+Context Switches =    20:  CALLS =   881:  Masks =     0
+The Z502 halts execution and Ends at Time 1980
+Exiting the program

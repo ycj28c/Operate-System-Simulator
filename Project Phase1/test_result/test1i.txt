@@ -1,0 +1,28 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test1i
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+Release 4.00:Test 1i: Pid 0
+Change susccessfully, Now The priority of (test1i pid:0) is 1
+ Time Target Action  Run New Done       State Populations 
+   80   0     MODIFY   0         READY  : 0
+ Time Target Action  Run New Done       State Populations 
+  131   1     CREATE   0   1      READY  : 0 1
+ERROR! The processid:9999 is illegal
+Program correctly returned an error: 3
+ERROR! The send_length:1000 is illegal
+Program correctly returned an error: 3
+ERROR! The processid:9999 is illegal
+Program correctly returned an error: 3
+ERROR! The receivelength:1000 is illegal
+Program correctly returned an error: 3
+Program correctly returned success.
+ERROR! The receivelength:10 is not enough
+Program correctly returned an error: 3
+ERROR! The limit number of messages is 100
+A total of 100 messages were enqueued.
+ Time Target Action  Run New Done       State Populations 
+  690   0       DONE   0      0 READY  : 0 1
+Hardware Statistics during the Simulation
+Context Switches =     2:  CALLS =   163:  Masks =     0
+The Z502 halts execution and Ends at Time 692
+Exiting the program

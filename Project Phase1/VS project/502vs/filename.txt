@@ -1,0 +1,232 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test1m
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+ Time Target Action  Run New Done       State Populations 
+   99   1     CREATE   0   1      READY  : 0 1
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  154   2     CREATE   0   2      READY  : 0 1 2
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  211   3     CREATE   0   3      READY  : 0 1 2 3
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  249   2    SUSPEND   0         READY  : 1 2 3
+                                 SUSPEND: 0
+Release 4.00:Test 1x: Pid 1
+ Time Target Action  Run New Done       State Populations 
+  311   1      SLEEP   1         READY  : 2 3
+                                 WAITING: 1
+                                 SUSPEND: 0
+Program correctly returned success.
+Release 4.00:Test 1j_echo: Pid 2
+Change susccessfully, Now The priority of (test1m_2 pid:2) is 11
+ Time Target Action  Run New Done       State Populations 
+  351   2     MODIFY   2         READY  : 2 3
+                                 WAITING: 1
+                                 SUSPEND: 0
+Program correctly returned success.
+Receive from PID = 0: length = 30: msg = change priority 11:
+ Time Target Action  Run New Done       State Populations 
+  382   0     RESUME   2         READY  : 0 2 3
+                                 WAITING: 1
+Program correctly returned success.
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  424   2   INTERUPT   2         READY  : 0 2 3 1
+ Time Target Action  Run New Done       State Populations 
+  451   2    SUSPEND   2         READY  : 0 3 1
+                                 SUSPEND: 2
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  497   0      SLEEP   0         READY  : 3 1
+                                 WAITING: 0
+                                 SUSPEND: 2
+Release 4.00:Test 1x: Pid 3
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  557   3   INTERUPT   3         READY  : 0 3 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+  597   3      SLEEP   3         READY  : 0 1
+                                 WAITING: 3
+                                 SUSPEND: 2
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  636   0   INTERUPT   0         READY  : 0 1 3
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+  666   2     RESUME   0         READY  : 0 2 1 3
+Program correctly returned success.
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  715   0      SLEEP   0         READY  : 2 1 3
+                                 WAITING: 0
+Change susccessfully, Now The priority of (test1m_2 pid:2) is 17
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  754   2     MODIFY   2         READY  : 2 1 3
+                                 WAITING: 0
+Program correctly returned success.
+Receive from PID = 0: length = 30: msg = change priority 17:
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  792   2   INTERUPT   2         READY  : 0 2 1 3
+ Time Target Action  Run New Done       State Populations 
+  819   2    SUSPEND   2         READY  : 0 1 3
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+  852   2     RESUME   0         READY  : 0 2 1 3
+Program correctly returned success.
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  901   0      SLEEP   0         READY  : 2 1 3
+                                 WAITING: 0
+Change susccessfully, Now The priority of (test1m_2 pid:2) is 24
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  940   2     MODIFY   2         READY  : 1 3 2
+                                 WAITING: 0
+Program correctly returned success.
+Receive from PID = 0: length = 30: msg = change priority 24:
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  978   2   INTERUPT   2         READY  : 0 1 3 2
+ Time Target Action  Run New Done       State Populations 
+ 1005   2    SUSPEND   2         READY  : 0 1 3
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 1038   2     RESUME   0         READY  : 0 1 3 2
+Program correctly returned success.
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+ 1087   0      SLEEP   0         READY  : 1 3 2
+                                 WAITING: 0
+Test1X: Pid = 1, Sleep Time = 106, Latency Time = 833
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1144   1   INTERUPT   1         READY  : 0 1 3 2
+ Time Target Action  Run New Done       State Populations 
+ 1193   1      SLEEP   1         READY  : 0 3 2
+                                 WAITING: 1
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+ 1231   2    SUSPEND   0         READY  : 3 2
+                                 WAITING: 1
+                                 SUSPEND: 0
+Test1X: Pid = 3, Sleep Time = 32, Latency Time = 729
+ Time Target Action  Run New Done       State Populations 
+Interrupt handler: Found device ID 4 with status 0
+ 1302   3      SLEEP   3         READY  : 2
+                                 WAITING: 1 3
+                                 SUSPEND: 0
+Change susccessfully, Now The priority of (test1m_2 pid:2) is 10
+ Time Target Action  Run New Done       State Populations 
+ 1353   2     MODIFY   2         READY  : 2 1
+                                 WAITING: 3
+                                 SUSPEND: 0
+Program correctly returned success.
+Receive from PID = 0: length = 30: msg = change priority 10:
+ Time Target Action  Run New Done       State Populations 
+ 1380   2   INTERUPT   2         READY  : 2 1
+                                 WAITING: 3
+                                 SUSPEND: 0
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1416   0     RESUME   2         READY  : 0 2 1
+                                 WAITING: 3
+Program correctly returned success.
+Change susccessfully, Now The priority of (test1m_2 pid:2) is 19
+ Time Target Action  Run New Done       State Populations 
+ 1455   2     MODIFY   2         READY  : 0 2 1 3
+Program correctly returned success.
+Receive from PID = 0: length = 30: msg = change priority 19:
+ Time Target Action  Run New Done       State Populations 
+ 1482   2   INTERUPT   2         READY  : 0 2 1 3
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+ 1514   2    SUSPEND   2         READY  : 0 1 3
+                                 SUSPEND: 2
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+ 1560   0      SLEEP   0         READY  : 1 3
+                                 WAITING: 0
+                                 SUSPEND: 2
+Test1X: Pid = 1, Sleep Time = 101, Latency Time = 424
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1617   1   INTERUPT   1         READY  : 0 1 3
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 1666   1      SLEEP   1         READY  : 0 3
+                                 WAITING: 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+ 1699   2     RESUME   0         READY  : 0 2 3
+                                 WAITING: 1
+Program correctly returned success.
+Program correctly returned success.
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1754   0      SLEEP   0         READY  : 2 3
+                                 WAITING: 1 0
+Program correctly returned success.
+Receive from PID = 0: length = 30: msg = say hello to me 20:
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+ 1803   2   INTERUPT   2         READY  : 2 3 1
+                                 WAITING: 0
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1845   2    SUSPEND   2         READY  : 0 3 1
+                                 SUSPEND: 2
+ Time Target Action  Run New Done       State Populations 
+Program correctly returned success.
+1. Receive from PID:2 msg:change priority 19
+ 1874   2   INTERUPT   0         READY  : 0 3 1
+Program correctly returned success.
+2. Receive from PID:2 msg:hello!
+                                 SUSPEND: 2
+Program correctly returned success.
+3. Receive from PID:2 msg:hello!
+Program correctly returned success.
+4. Receive from PID:2 msg:hello!
+Program correctly returned success.
+5. Receive from PID:2 msg:hello!
+Program correctly returned success.
+6. Receive from PID:2 msg:hello!
+Program correctly returned success.
+7. Receive from PID:2 msg:hello!
+Program correctly returned success.
+8. Receive from PID:2 msg:hello!
+Program correctly returned success.
+9. Receive from PID:2 msg:hello!
+Program correctly returned success.
+10. Receive from PID:2 msg:hello!
+Program correctly returned success.
+11. Receive from PID:2 msg:hello!
+Program correctly returned success.
+12. Receive from PID:2 msg:hello!
+Program correctly returned success.
+13. Receive from PID:2 msg:hello!
+Program correctly returned success.
+14. Receive from PID:2 msg:hello!
+Program correctly returned success.
+15. Receive from PID:2 msg:hello!
+Program correctly returned success.
+16. Receive from PID:2 msg:hello!
+Program correctly returned success.
+17. Receive from PID:2 msg:hello!
+Program correctly returned success.
+18. Receive from PID:2 msg:hello!
+Program correctly returned success.
+19. Receive from PID:2 msg:hello!
+Program correctly returned success.
+20. Receive from PID:2 msg:hello!
+ Time Target Action  Run New Done       State Populations 
+ 2001   0       DONE   0      0 READY  : 0 3 1
+                                 SUSPEND: 2
+Hardware Statistics during the Simulation
+Context Switches =    22:  CALLS =   898:  Masks =     0
+The Z502 halts execution and Ends at Time 2003
+Exiting the program

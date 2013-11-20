@@ -1,0 +1,11 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test0
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+This is Release 4.00:  Test 0
+Time of day is 59
+ Time Target Action  Run New Done       State Populations 
+   84   0       DONE   0      0 
+Hardware Statistics during the Simulation
+Context Switches =     1:  CALLS =    31:  Masks =     0
+The Z502 halts execution and Ends at Time 86
+Exiting the program

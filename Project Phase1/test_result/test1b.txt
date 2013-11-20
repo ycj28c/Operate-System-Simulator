@@ -1,0 +1,92 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test1b
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+This is Release 4.00:  Test 1b
+ERROR! the priority -3 is illegal.
+Program correctly returned an error: 6
+ Time Target Action  Run New Done       State Populations 
+  104   1     CREATE   0   1      READY  : 0 1
+Program correctly returned success.
+ERROR! the processname 'two_the_same' is already exsited.
+Program correctly returned an error: 6
+ Time Target Action  Run New Done       State Populations 
+  140   1       DONE   0      1 READY  : 0
+Program correctly returned success.
+Creating process "Test1b_1"
+ Time Target Action  Run New Done       State Populations 
+  193   2     CREATE   0   2      READY  : 0 2
+Creating process "Test1b_2"
+ Time Target Action  Run New Done       State Populations 
+  248   3     CREATE   0   3      READY  : 0 2 3
+Creating process "Test1b_3"
+ Time Target Action  Run New Done       State Populations 
+  305   4     CREATE   0   4      READY  : 0 2 3 4
+Creating process "Test1b_4"
+ Time Target Action  Run New Done       State Populations 
+  364   5     CREATE   0   5      READY  : 0 2 3 4 5
+Creating process "Test1b_5"
+ Time Target Action  Run New Done       State Populations 
+  425   6     CREATE   0   6      READY  : 0 2 3 4 5 6
+Creating process "Test1b_6"
+ Time Target Action  Run New Done       State Populations 
+  488   7     CREATE   0   7      READY  : 0 2 3 4 5 6 7
+Creating process "Test1b_7"
+ Time Target Action  Run New Done       State Populations 
+  553   8     CREATE   0   8      READY  : 0 2 3 4 5 6 7 8
+Creating process "Test1b_8"
+ Time Target Action  Run New Done       State Populations 
+  620   9     CREATE   0   9      READY  : 0 2 3 4 5 6 7 8 9
+Creating process "Test1b_9"
+ Time Target Action  Run New Done       State Populations 
+  689  10     CREATE   0  10      READY  : 0 2 3 4 5 6 7 8 9 10
+Creating process "Test1b_10"
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+ Time Target Action  Run New Done       State Populations 
+  760  11     CREATE   0  11      READY  : 0 2 3 4 5 6 7 8 9 10
+Creating process "Test1b_11"
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+ Time Target Action  Run New Done       State Populations 
+  833  12     CREATE   0  12      READY  : 0 2 3 4 5 6 7 8 9 10
+Creating process "Test1b_12"
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+ Time Target Action  Run New Done       State Populations 
+  908  13     CREATE   0  13      READY  : 0 2 3 4 5 6 7 8 9 10
+Creating process "Test1b_13"
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+ Time Target Action  Run New Done       State Populations 
+  985  14     CREATE   0  14      READY  : 0 2 3 4 5 6 7 8 9 10
+Creating process "Test1b_14"
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+ Time Target Action  Run New Done       State Populations 
+ 1064  15     CREATE   0  15      READY  : 0 2 3 4 5 6 7 8 9 10
+Creating process "Test1b_15"
+The limit of PCB is 15, you can't create more process
+Program correctly returned an error: 6
+15 processes were created in all.
+Program correctly returned success.
+The PID of this process is 0
+Program correctly returned success.
+The PID of target process is 2
+Program correctly returned an error: 1
+Test1b, PID 0, Ends at Time 1099
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+Too many (more than 10) PIDs for this mode entered in SP_setup.
+ Time Target Action  Run New Done       State Populations 
+ 1152   0       DONE   0      0 READY  : 0 2 3 4 5 6 7 8 9 10
+Hardware Statistics during the Simulation
+Context Switches =    19:  CALLS =   397:  Masks =     0
+The Z502 halts execution and Ends at Time 1154
+Exiting the program

@@ -1,0 +1,274 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test1j
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+Release 4.00:Test 1j: Pid 0
+Change susccessfully, Now The priority of (test1j pid:0) is 1
+ Time Target Action  Run New Done       State Populations 
+   80   0     MODIFY   0         READY  : 0
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  131   1     CREATE   0   1      READY  : 0 1
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  186   2     CREATE   0   2      READY  : 0 1 2
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  243   3     CREATE   0   3      READY  : 0 1 2 3
+Program correctly returned success.
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  281   0    SUSPEND   0         READY  : 1 2 3
+                                 SUSPEND: 0
+Program correctly returned success.
+Release 4.00:Test 1j_echo: Pid 1
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = message to #1:
+ Time Target Action  Run New Done       State Populations 
+  324   0     RESUME   1         READY  : 0 1 2 3
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  355   1    SUSPEND   1         READY  : 0 2 3
+                                 SUSPEND: 1
+Program correctly returned success.
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  393   0    SUSPEND   0         READY  : 2 3
+                                 SUSPEND: 1 0
+Program correctly returned success.
+Release 4.00:Test 1j_echo: Pid 2
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = message to #2:
+ Time Target Action  Run New Done       State Populations 
+  436   0     RESUME   2         READY  : 0 2 3
+                                 SUSPEND: 1
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  467   2    SUSPEND   2         READY  : 0 3
+                                 SUSPEND: 1 2
+Program correctly returned success.
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  505   0    SUSPEND   0         READY  : 3
+                                 SUSPEND: 1 2 0
+Program correctly returned success.
+Release 4.00:Test 1j_echo: Pid 3
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = message to #3:
+ Time Target Action  Run New Done       State Populations 
+  548   0     RESUME   3         READY  : 0 3
+                                 SUSPEND: 1 2
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  579   3    SUSPEND   3         READY  : 0
+                                 SUSPEND: 1 2 3
+Program correctly returned success.
+ERROR! The limit number of messages is 100
+A total of 100 messages were enqueued.
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 0:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 1:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 2:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 3:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 4:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 5:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 6:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 7:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 8:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 9:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 10:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 11:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 12:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 13:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 14:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 15:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 16:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 17:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 18:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 19:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 20:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 21:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 22:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 23:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 24:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 25:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 26:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 27:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 28:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 29:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 30:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 31:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 32:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 33:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 34:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 35:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 36:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 37:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 38:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 39:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 40:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 41:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 42:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 43:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 44:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 45:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 46:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 47:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 48:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 49:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 50:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 51:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 52:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 53:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 54:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 55:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 56:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 57:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 58:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 59:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 60:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 61:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 62:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 63:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 64:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 65:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 66:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 67:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 68:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 69:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 70:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 71:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 72:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 73:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 74:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 75:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 76:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 77:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 78:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 79:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 80:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 81:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 82:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 83:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 84:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 85:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 86:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 87:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 88:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 89:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 90:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 91:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 92:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 93:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 94:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 95:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 96:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 97:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 98:
+Program correctly returned success.
+Receive from PID = 0: length = 20: msg = This is message 99:
+A total of 100 messages were received.
+ Time Target Action  Run New Done       State Populations 
+ 1617   0       DONE   0      0 READY  : 0
+                                 SUSPEND: 1 2 3
+Hardware Statistics during the Simulation
+Context Switches =    10:  CALLS =   436:  Masks =     0
+The Z502 halts execution and Ends at Time 1619
+Exiting the program

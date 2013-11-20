@@ -1,0 +1,451 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test1c
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+This is Release 4.00:  Test 1c
+ Time Target Action  Run New Done       State Populations 
+   99   1     CREATE   0   1      READY  : 0 1
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  154   2     CREATE   0   2      READY  : 0 1 2
+ Time Target Action  Run New Done       State Populations 
+  211   3     CREATE   0   3      READY  : 0 1 2 3
+ Time Target Action  Run New Done       State Populations 
+  270   4     CREATE   0   4      READY  : 0 1 2 3 4
+ Time Target Action  Run New Done       State Populations 
+  331   5     CREATE   0   5      READY  : 0 1 2 3 4 5
+ Time Target Action  Run New Done       State Populations 
+  381   0      SLEEP   0         READY  : 1 2 3 4 5
+                                 WAITING: 0
+Release 4.00:Test 1x: Pid 1
+ Time Target Action  Run New Done       State Populations 
+  447   1      SLEEP   1         READY  : 2 3 4 5
+                                 WAITING: 0 1
+Release 4.00:Test 1x: Pid 2
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  522   2      SLEEP   2         READY  : 3 4 5
+                                 WAITING: 0 1 2
+Release 4.00:Test 1x: Pid 3
+ Time Target Action  Run New Done       State Populations 
+  586   3   INTERUPT   3         READY  : 3 4 5 1
+                                 WAITING: 0 2
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  637   3   INTERUPT   3         READY  : 3 4 5 1 2
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+  681   3      SLEEP   3         READY  : 4 5 1 2
+                                 WAITING: 0 3
+Interrupt handler: Found device ID 4 with status 0
+Release 4.00:Test 1x: Pid 4
+ Time Target Action  Run New Done       State Populations 
+  764   4   INTERUPT   4         READY  : 4 5 1 2 3
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+  797   4      SLEEP   4         READY  : 5 1 2 3
+                                 WAITING: 0 4
+Release 4.00:Test 1x: Pid 5
+ Time Target Action  Run New Done       State Populations 
+  860   5      SLEEP   5         READY  : 1 2 3
+                                 WAITING: 0 4 5
+Test1X: Pid = 1, Sleep Time = 62, Latency Time = 474
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  930   1   INTERUPT   1         READY  : 1 2 3 4
+                                 WAITING: 0 5
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+  989   1      SLEEP   1         READY  : 2 3 4
+                                 WAITING: 0 5 1
+ Time Target Action  Run New Done       State Populations 
+ 1032   2   INTERUPT   2         READY  : 2 3 4 5
+                                 WAITING: 0 1
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1083   2   INTERUPT   2         READY  : 2 3 4 5 1
+                                 WAITING: 0
+Test1X: Pid = 2, Sleep Time = 40, Latency Time = 630
+ Time Target Action  Run New Done       State Populations 
+ 1154   2      SLEEP   2         READY  : 3 4 5 1
+                                 WAITING: 0 2
+Test1X: Pid = 3, Sleep Time = 31, Latency Time = 610
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1224   3   INTERUPT   3         READY  : 3 4 5 1 2
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 1277   3      SLEEP   3         READY  : 4 5 1 2
+                                 WAITING: 0 3
+Test1X: Pid = 4, Sleep Time = 126, Latency Time = 576
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1358   4   INTERUPT   4         READY  : 4 5 1 2 3
+                                 WAITING: 0
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1400   4   INTERUPT   4         READY  : 0 4 5 1 2 3
+ Time Target Action  Run New Done       State Populations 
+ 1442   4      SLEEP   4         READY  : 0 5 1 2 3
+                                 WAITING: 4
+ Time Target Action  Run New Done       State Populations 
+Interrupt handler: Found device ID 4 with status 0
+ 1502   0      SLEEP   0         READY  : 5 1 2 3
+                                 WAITING: 4 0
+Test1X: Pid = 5, Sleep Time = 127, Latency Time = 714
+ Time Target Action  Run New Done       State Populations 
+ 1582   5   INTERUPT   5         READY  : 5 1 2 3 4
+                                 WAITING: 0
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1629   5      SLEEP   5         READY  : 1 2 3 4
+                                 WAITING: 0 5
+Test1X: Pid = 1, Sleep Time = 55, Latency Time = 707
+ Time Target Action  Run New Done       State Populations 
+ 1710   1   INTERUPT   1         READY  : 1 2 3 4 5
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 1743   1      SLEEP   1         READY  : 2 3 4 5
+                                 WAITING: 0 1
+Test1X: Pid = 2, Sleep Time = 53, Latency Time = 650
+ Time Target Action  Run New Done       State Populations 
+ 1812   2      SLEEP   2         READY  : 3 4 5
+                                 WAITING: 0 1 2
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1864   3   INTERUPT   3         READY  : 3 4 5 1
+                                 WAITING: 0 2
+Test1X: Pid = 3, Sleep Time = 61, Latency Time = 647
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 1941   3      SLEEP   3         READY  : 4 5 1
+                                 WAITING: 0 2 3
+Test1X: Pid = 4, Sleep Time = 48, Latency Time = 653
+ Time Target Action  Run New Done       State Populations 
+ 2028   4   INTERUPT   4         READY  : 5 1 2
+                                 WAITING: 0 3 4
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 2064   4      SLEEP   4         READY  : 5 1 2
+                                 WAITING: 0 3 4
+Test1X: Pid = 5, Sleep Time = 17, Latency Time = 514
+ Time Target Action  Run New Done       State Populations 
+ 2151   5   INTERUPT   5         READY  : 1 2 3
+                                 WAITING: 0 4 5
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 2187   5      SLEEP   5         READY  : 1 2 3
+                                 WAITING: 0 4 5
+Test1X: Pid = 1, Sleep Time = 110, Latency Time = 557
+ Time Target Action  Run New Done       State Populations 
+ 2272   1   INTERUPT   1         READY  : 1 2 3 4 5
+                                 WAITING: 0
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 2329   1      SLEEP   1         READY  : 2 3 4 5 1
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 2357   1   INTERUPT   2         READY  : 2 3 4 5 1
+                                 WAITING: 0
+Test1X: Pid = 2, Sleep Time = 129, Latency Time = 601
+ Time Target Action  Run New Done       State Populations 
+ 2425   2      SLEEP   2         READY  : 3 4 5 1
+                                 WAITING: 0 2
+Test1X: Pid = 3, Sleep Time = 135, Latency Time = 551
+ Time Target Action  Run New Done       State Populations 
+Interrupt handler: Found device ID 4 with status 0
+ 2500   3      SLEEP   3         READY  : 4 5 1
+                                 WAITING: 0 2 3
+Test1X: Pid = 4, Sleep Time = 83, Latency Time = 554
+ Time Target Action  Run New Done       State Populations 
+ 2590   4   INTERUPT   4         READY  : 0 5 1
+                                 WAITING: 2 3 4
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 2626   4      SLEEP   4         READY  : 0 5 1
+                                 WAITING: 2 3 4
+ Time Target Action  Run New Done       State Populations 
+ 2700   0   INTERUPT   0         READY  : 5 1 2 3
+                                 WAITING: 4 0
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 2736   0      SLEEP   0         READY  : 5 1 2 3
+                                 WAITING: 4 0
+Test1X: Pid = 5, Sleep Time = 32, Latency Time = 661
+ Time Target Action  Run New Done       State Populations 
+ 2815   5   INTERUPT   5         READY  : 5 1 2 3 4
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 2848   5      SLEEP   5         READY  : 1 2 3 4
+                                 WAITING: 0 5
+Test1X: Pid = 1, Sleep Time = 0, Latency Time = 625
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 2929   1      SLEEP   1         READY  : 2 3 4
+                                 WAITING: 0 5 1
+Test1X: Pid = 2, Sleep Time = 142, Latency Time = 562
+ Time Target Action  Run New Done       State Populations 
+ 3020   2   INTERUPT   2         READY  : 3 4 5 1
+                                 WAITING: 0 2
+ Time Target Action  Run New Done       State Populations 
+ 3047   2      SLEEP   2         READY  : 3 4 5 1
+                                 WAITING: 0 2
+Test1X: Pid = 3, Sleep Time = 142, Latency Time = 611
+ Time Target Action  Run New Done       State Populations 
+ 3119   3      SLEEP   3         READY  : 4 5 1
+                                 WAITING: 0 2 3
+Test1X: Pid = 4, Sleep Time = 66, Latency Time = 602
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 3216   4   INTERUPT   4         READY  : 5 1 2 3
+                                 WAITING: 0 4
+ Time Target Action  Run New Done       State Populations 
+ 3243   4      SLEEP   4         READY  : 5 1 2 3
+                                 WAITING: 0 4
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 3300   5   INTERUPT   5         READY  : 5 1 2 3 4
+                                 WAITING: 0
+Test1X: Pid = 5, Sleep Time = 138, Latency Time = 541
+ Time Target Action  Run New Done       State Populations 
+ 3366   5      SLEEP   5         READY  : 1 2 3 4
+                                 WAITING: 0 5
+Test1X: Pid = 1, Sleep Time = 0, Latency Time = 507
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 3462   1   INTERUPT   1         READY  : 2 3 4 1
+                                 WAITING: 0 5
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 3498   1      SLEEP   1         READY  : 2 3 4 1
+                                 WAITING: 0 5
+ Time Target Action  Run New Done       State Populations 
+ 3541   2   INTERUPT   2         READY  : 2 3 4 1 5
+                                 WAITING: 0
+Test1X: Pid = 2, Sleep Time = 50, Latency Time = 600
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 3621   2      SLEEP   2         READY  : 3 4 1 5
+                                 WAITING: 0 2
+Test1X: Pid = 3, Sleep Time = 75, Latency Time = 563
+ Time Target Action  Run New Done       State Populations 
+ 3702   3   INTERUPT   3         READY  : 3 4 1 5 2
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 3735   3      SLEEP   3         READY  : 4 1 5 2
+                                 WAITING: 0 3
+Test1X: Pid = 4, Sleep Time = 88, Latency Time = 605
+ Time Target Action  Run New Done       State Populations 
+ 3804   4      SLEEP   4         READY  : 1 5 2
+                                 WAITING: 0 3 4
+Test1X: Pid = 1, Sleep Time = 0, Latency Time = 428
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 3903   1      SLEEP   1         READY  : 0 5 2 3 4 1
+ Time Target Action  Run New Done       State Populations 
+ 3931   1   INTERUPT   0         READY  : 0 5 2 3 4 1
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 3969   0   INTERUPT   0         READY  : 0 5 2 3 4 1
+ Time Target Action  Run New Done       State Populations 
+ 4023   0      SLEEP   0         READY  : 5 2 3 4 1
+                                 WAITING: 0
+Test1X: Pid = 5, Sleep Time = 141, Latency Time = 718
+ Time Target Action  Run New Done       State Populations 
+ 4095   5      SLEEP   5         READY  : 2 3 4 1
+                                 WAITING: 0 5
+Test1X: Pid = 2, Sleep Time = 22, Latency Time = 544
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 4176   2   INTERUPT   2         READY  : 2 3 4 1 5
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 4218   2      SLEEP   2         READY  : 3 4 1 5
+                                 WAITING: 0 2
+Test1X: Pid = 3, Sleep Time = 102, Latency Time = 586
+ Time Target Action  Run New Done       State Populations 
+ 4287   3      SLEEP   3         READY  : 4 1 5
+                                 WAITING: 0 2 3
+Test1X: Pid = 4, Sleep Time = 33, Latency Time = 542
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 4371   4   INTERUPT   4         READY  : 4 1 5 2
+                                 WAITING: 0 3
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 4432   4      SLEEP   4         READY  : 1 5 2 3 4
+                                 WAITING: 0
+Test1X: Pid = 1, Sleep Time = 0, Latency Time = 614
+ Time Target Action  Run New Done       State Populations 
+ 4498   4   INTERUPT   1         READY  : 1 5 2 3 4
+                                 WAITING: 0
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 4555   1      SLEEP   1         READY  : 5 2 3 4 1
+                                 WAITING: 0
+Test1X: Pid = 5, Sleep Time = 57, Latency Time = 541
+ Time Target Action  Run New Done       State Populations 
+ 4601   1   INTERUPT   5         READY  : 5 2 3 4 1
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 4654   5      SLEEP   5         READY  : 2 3 4 1
+                                 WAITING: 0 5
+Test1X: Pid = 2, Sleep Time = 99, Latency Time = 548
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 4732   2      SLEEP   2         READY  : 3 4 1
+                                 WAITING: 0 5 2
+ Time Target Action  Run New Done       State Populations 
+ 4775   3   INTERUPT   3         READY  : 3 4 1 5
+                                 WAITING: 0 2
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 4833   3   INTERUPT   3         READY  : 3 4 1 5 2
+                                 WAITING: 0
+Test1X: Pid = 3, Sleep Time = 109, Latency Time = 596
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 4906   3      SLEEP   3         READY  : 4 1 5 2
+                                 WAITING: 0 3
+Test1X: Pid = 4, Sleep Time = 44, Latency Time = 616
+ Time Target Action  Run New Done       State Populations 
+ 4978   4   INTERUPT   4         READY  : 4 1 5 2 3
+                                 WAITING: 0
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 5026   4      SLEEP   4         READY  : 1 5 2 3
+                                 WAITING: 0 4
+ Time Target Action  Run New Done       State Populations 
+Test1X: Pid = 1, Sleep Time = 0, Latency Time = 614
+ 5080   1   INTERUPT   1         READY  : 0 1 5 2 3
+                                 WAITING: 4
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 5138   1   INTERUPT   1         READY  : 0 1 5 2 3 4
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 5197   1      SLEEP   1         READY  : 0 5 2 3 4 1
+ Time Target Action  Run New Done       State Populations 
+ 5246   1   INTERUPT   0         READY  : 0 5 2 3 4 1
+ Time Target Action  Run New Done       State Populations 
+ 5279   0      SLEEP   0         READY  : 5 2 3 4 1
+                                 WAITING: 0
+Test1X: Pid = 5, Sleep Time = 80, Latency Time = 687
+ Time Target Action  Run New Done       State Populations 
+ 5351   5      SLEEP   5         READY  : 2 3 4 1
+                                 WAITING: 0 5
+Test1X: Pid = 2, Sleep Time = 88, Latency Time = 686
+ Time Target Action  Run New Done       State Populations 
+ 5420   2      SLEEP   2         READY  : 3 4 1
+                                 WAITING: 0 5 2
+Interrupt handler: Found device ID 4 with status 0
+Test1X: Pid = 3, Sleep Time = 13, Latency Time = 599
+ Time Target Action  Run New Done       State Populations 
+ 5505   3   INTERUPT   3         READY  : 3 4 1 5
+                                 WAITING: 0 2
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 5564   3      SLEEP   3         READY  : 4 1 5 2
+                                 WAITING: 0 3
+Test1X: Pid = 4, Sleep Time = 44, Latency Time = 610
+ Time Target Action  Run New Done       State Populations 
+ 5627   3   INTERUPT   4         READY  : 4 1 5 2
+                                 WAITING: 0 3
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 5684   4      SLEEP   4         READY  : 1 5 2 3
+                                 WAITING: 0 4
+ Time Target Action  Run New Done       State Populations 
+ 5712   4   INTERUPT   1         READY  : 1 5 2 3
+                                 WAITING: 0 4
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 5763   1   INTERUPT   1         READY  : 1 5 2 3 4
+                                 WAITING: 0
+Test1X: Pid = 1, Sleep Time = 0, Latency Time = 683
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 5858   1      SLEEP   1         READY  : 5 2 3 4 1
+                                 WAITING: 0
+Test1X: Pid = 5, Sleep Time = 102, Latency Time = 580
+ Time Target Action  Run New Done       State Populations 
+ 5915   1   INTERUPT   5         READY  : 5 2 3 4 1
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 5957   5      SLEEP   5         READY  : 2 3 4 1
+                                 WAITING: 0 5
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 6009   2   INTERUPT   2         READY  : 2 3 4 1 5
+                                 WAITING: 0
+Test1X: Pid = 2, Sleep Time = 99, Latency Time = 646
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 6104   2      SLEEP   2         READY  : 3 4 1 5 2
+                                 WAITING: 0
+Test1X: Pid = 3, Sleep Time = 117, Latency Time = 659
+ Time Target Action  Run New Done       State Populations 
+ 6161   2   INTERUPT   3         READY  : 3 4 1 5 2
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 6200   3      SLEEP   3         READY  : 4 1 5 2
+                                 WAITING: 0 3
+Test1X: Pid = 4, Sleep Time = 88, Latency Time = 621
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 6268   4   INTERUPT   4         READY  : 0 4 1 5 2
+                                 WAITING: 3
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 6332   4      SLEEP   4         READY  : 0 1 5 2
+                                 WAITING: 3 4
+ Time Target Action  Run New Done       State Populations 
+ 6393   0   INTERUPT   0         READY  : 0 1 5 2 3
+                                 WAITING: 4
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 6435   0      SLEEP   0         READY  : 1 5 2 3
+                                 WAITING: 4 0
+Test1X: Pid = 1, Sleep Time = 0, Latency Time = 669
+Test1x, PID 1, Ends at Time 6454
+ Time Target Action  Run New Done       State Populations 
+ 6496   1   INTERUPT   1         READY  : 5 2 3 4
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 6523   1       DONE   1      1 READY  : 5 2 3 4
+                                 WAITING: 0
+Test1X: Pid = 5, Sleep Time = 35, Latency Time = 632
+ Time Target Action  Run New Done       State Populations 
+ 6593   5      SLEEP   5         READY  : 2 3 4
+                                 WAITING: 0 5
+Test1X: Pid = 2, Sleep Time = 0, Latency Time = 574
+Test1x, PID 2, Ends at Time 6606
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 6648   2       DONE   2      2 READY  : 3 4
+                                 WAITING: 0 5
+Test1X: Pid = 3, Sleep Time = 117, Latency Time = 511
+Test1x, PID 3, Ends at Time 6661
+ Time Target Action  Run New Done       State Populations 
+ 6705   3   INTERUPT   3         READY  : 4 5
+                                 WAITING: 0
+ Time Target Action  Run New Done       State Populations 
+ 6728   3       DONE   3      3 READY  : 4 5
+                                 WAITING: 0
+Test1X: Pid = 4, Sleep Time = 77, Latency Time = 466
+Test1x, PID 4, Ends at Time 6741
+ Time Target Action  Run New Done       State Populations 
+ 6770   4       DONE   4      4 READY  : 5
+                                 WAITING: 0
+Test1X: Pid = 5, Sleep Time = 59, Latency Time = 236
+Test1x, PID 5, Ends at Time 6783
+ Time Target Action  Run New Done       State Populations 
+ 6810   5       DONE   5      5 WAITING: 0
+Interrupt handler: Found device ID 4 with status 0
+ Time Target Action  Run New Done       State Populations 
+ 7401   5   INTERUPT   5         READY  : 0
+ Time Target Action  Run New Done       State Populations 
+ 7434   0       DONE   0      0 READY  : 0
+Hardware Statistics during the Simulation
+Context Switches =    67:  CALLS =  3314:  Masks =     0
+The Z502 halts execution and Ends at Time 7436
+Exiting the program

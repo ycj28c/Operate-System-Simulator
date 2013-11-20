@@ -1,0 +1,21 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test1g
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+Release 4.00:Test 1g: Pid 0
+ Time Target Action  Run New Done       State Populations 
+  104   1     CREATE   0   1      READY  : 0 1
+Program correctly returned success.
+ERROR! the PID:9999 is illegal, PID range from 0-99 and -1
+Program correctly returned an error: 3
+ERROR! the priority:999 is illegal
+Program correctly returned an error: 3
+Change susccessfully, Now The priority of (test1g_a pid:1) is 10
+ Time Target Action  Run New Done       State Populations 
+  145   1     MODIFY   0         READY  : 0 1
+Program correctly returned success.
+ Time Target Action  Run New Done       State Populations 
+  172   0       DONE   0      0 READY  : 0 1
+Hardware Statistics during the Simulation
+Context Switches =     2:  CALLS =    60:  Masks =     0
+The Z502 halts execution and Ends at Time 174
+Exiting the program
