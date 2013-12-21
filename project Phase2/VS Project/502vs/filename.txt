@@ -1,0 +1,21 @@
+Program called with 2 arguments: D:\Project\502vs\Debug\502vs.exe test2a
+ Time Target Action  Run New Done       State Populations 
+   46   0     CREATE   0   0      READY  : 0
+Release 4.00:Test 2a: Pid 0
+
+                       PHYSICAL MEMORY STATE
+Frame 0000000000111111111122222222223333333333444444444455555555556666
+Frame 0123456789012345678901234567890123456789012345678901234567890123
+PID   0                                                                
+VPN   0                                                                
+VPN   0                                                                
+VPN   2                                                                
+VPN   5                                                                
+VMR   4                                                                
+PID= 0  address= 412   written= 412   read= 412
+ Time Target Action  Run New Done       State Populations 
+   86   0       DONE   0      0 
+Hardware Statistics during the Simulation
+Faults =     1:  Context Switches =     2:  CALLS =    35:  Masks =     0
+The Z502 halts execution and Ends at Time 88
+Exiting the program
